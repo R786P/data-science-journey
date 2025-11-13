@@ -1,0 +1,16 @@
+import pandas as pd
+import numpy as np
+
+# Fake data with missing values
+df = pd.DataFrame({
+    'name': ['A', 'B', 'C', 'D'],
+    'age': [25, np.nan, 30, np.nan],
+    'salary': [50000, 60000, np.nan, 70000]
+})
+
+print("पहले:\n", df)
+# Missing values भरो → mean से
+df['age'].fillna(df['age'].mean(), inplace=True)
+df['salary'].fillna(df['salary'].median(), inplace=True)
+
+print("\nबाद में:\n", df)
