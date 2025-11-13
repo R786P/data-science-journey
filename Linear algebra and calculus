@@ -1,0 +1,14 @@
+import numpy as np
+
+# वेक्टर और मैट्रिक्स
+A = np.array([[1, 2], [3, 4]])  # 2x2 मैट्रिक्स
+B = np.array([5, 6])            # वेक्टर
+
+# मैट्रिक्स गुणा
+result = A @ B  # या np.dot(A, B)
+print("मैट्रिक्स × वेक्टर =", result)
+
+# Gradient (Calculus) — loss function का derivative
+x = 2.0
+gradient = 2 * x  # d/dx (x²) = 2x
+print("x=2 पर gradient =", gradient)
