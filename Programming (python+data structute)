@@ -1,0 +1,13 @@
+# Data Structures
+customers = {
+    "user1": {"name": "Rahul", "age": 28, "city": "Delhi"},
+    "user2": {"name": "Priya", "age": 32, "city": "Mumbai"}
+}
+
+# Loop + Condition
+for user_id, info in customers.items():
+    if info["age"] > 30:
+        print(f"{info['name']} 30+ हैं और {info['city']} से हैं।")
+
+# Git की जगह (Colab में): "File > Save a copy in GitHub"
+# → आपका कोड ऑटो-सेव हो जाएगा!
